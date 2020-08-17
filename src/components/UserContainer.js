@@ -3,16 +3,16 @@ import User from './User';
 import userData from './../assets/userData.json';
 
 export default class UserContainer extends React.Component{
-    constructor(props){
-        super(props);
-    }
 
     render(){
+       const users =  userData.members.map(user=>{
         return(
-            <div>
-                {userData.members.map(user=><User/>)}
-            </div>
+            <div key={user.id}><User name={user.real_name}/></div>
+        )}
         )
-    }
 
+        return(
+            <div className="userBook">{users}</div>
+        )
+}
 }

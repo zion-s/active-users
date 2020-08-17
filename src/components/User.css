@@ -1,0 +1,34 @@
+#pic{
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.userCard{
+    width: 180px;
+    height: 170px;
+    margin: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    -webkit-box-shadow: 6px 6px 16px -4px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 6px 16px -4px rgba(0,0,0,0.61);
+    box-shadow: 6px 6px 16px -4px rgba(0,0,0,0.61);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.userCard:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
